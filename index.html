@@ -1,46 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike ColorRave</title>
-</head>
-<body>
-<header class="header">
-<div class="container">
-<nav class="nav">
-<a href="./index.html">
-    <img src="" alt="logo">
-    <ul class="header_nav_list">
-        <li><a href="./index.html">Main page</a></li>
-        <li><a href="benefits">Benefits</a></li>
-        <li><a href="advantages">Advantages</a></li>
-        <li><a href="reviews">Reviews</a></li>
-        <li><a href="footer">Contacts</a></li>
-        <li><a href="order">Order</a></li>
-    </ul>
-    <ul>
-        <li><a href="./index.html">Ua</a></li>
-        <li><a href="./index.html">Eng</a></li>
-    </ul>
-</a>
-</nav>
-</div>
-</header>
-<main>
-<section class="hero">
-<div class="container">
-<img src="./images/logo_2.svg" alt="logo_2">
-<h1 class="title_hero">ColorRawe</h1>
-<h2 class="hero_subtitle">Your dream Nike</h2>
-</div>
-<p class="hero_text">On this site you can find custom Nike sneakers of your dreams. 
-The original company caт`t create such beautiful 
-sneakers as we do.
-Good luck finding your way in the world of custom sneakers.
-</p>
-<a class="button_hero" href="https://www.nike.com/">Buy my Nike</a>
-</section>
-</main>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="./index.html">
+            <img src="" alt="logo" />
+            <ul class="header_nav_list">
+              <li><a href="./index.html">Main page</a></li>
+              <li><a href="benefits">Benefits</a></li>
+              <li><a href="advantages">Advantages</a></li>
+              <li><a href="reviews">Reviews</a></li>
+              <li><a href="footer">Contacts</a></li>
+              <li><a href="order">Order</a></li>
+            </ul>
+            <ul>
+              <li><a href="./index.html">Ua</a></li>
+              <li><a href="./index.html">Eng</a></li>
+            </ul>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <img src="./images/logo_2.svg" alt="logo_2" />
+          <h1 class="title_hero">ColorRawe</h1>
+          <h2 class="hero_subtitle">Your dream Nike</h2>
+        </div>
+        <p class="hero_text">
+          On this site you can find custom Nike sneakers of your dreams. The
+          original company caт`t create such beautiful sneakers as we do. Good
+          luck finding your way in the world of custom sneakers.
+        </p>
+        <a class="button_hero" href="https://www.nike.com/">Buy my Nike</a>
+      </section>
+      <section id="benefits" class="benefits">
+        <div class="container">
+          <ul class="benefits_list">
+            <li class="benefits_item">
+              <p>Premium Quality</p>
+              <img src="./images/Stars.svg" alt="Stars" />
+            </li>
+            <li class="benefits_item">
+              <p>Indelible paint</p>
+              <img src="./images/Paints.svg" alt="Paints" />
+            </li>
+            <li class="benefits_item">
+              <p>Fast shipping</p>
+              <img src="./images/Truck.svg" alt="Truck" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="reviews" class="reviews">
+        <ul class="reviews_list">
+          <li class="reviews_item">
+            <p class="reviews_text">
+              Sneakers are very comfortable and well painted, nothing has worn
+              off in a year.
+            </p>
+            <p class="reviews_date">25.11</p>
+            <div class="reviews_author_wraper">
+              <img src="./images/John Teylor.png" alt="John Teylor" />
+              <p class="reviews-author">John Teylor</p>
+              <p class="reviews_from">With us from 2018</p>
+            </div>
+          </li>
+          <li class="reviews_item">
+            <p class="reviews_text">
+              I'm very happy with this color scheme. They match all my clothes.
+            </p>
+            <p class="reviews_date">05.01</p>
+            <div class="reviews_author_wrapper">
+              <img src="./images/Elizabeth Garsia.png" alt="Elizabeth Garsia" />
+              <p class="reviews-author">Elizabeth Garsia</p>
+              <p class="reviews_from">With us from 2020</p>
+            </div>
+          </li>
+          <li class="reviews_item">
+            <p class="reviews_text">
+              Just right if you need to go to a party.I use them actively, the
+              paint is super.
+            </p>
+            <p class="reviews_date">18.06</p>
+            <div class="reviews_author_wraper">
+              <img src="./images/Tom Maquare.png" alt="Tom Maquare" />
+              <p class="reviews-author">Tom Maquare</p>
+              <p class="reviews_from">With us from 2019</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+  </body>
 </html>
