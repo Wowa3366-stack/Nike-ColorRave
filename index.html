@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container flex">
         <nav class="nav">
           <a href="./index.html">
             <img src="./images/logo.svg" alt="logo" />
@@ -54,7 +54,7 @@
           original company caт`t create such beautiful sneakers as we do. Good
           luck finding your way in the world of custom sneakers.
         </p>
-        <a class="button_hero" href="https://www.nike.com/">Buy my Nike</a>
+        <a class="button_hero" href="https://www.nike.com/" target="_blank">Buy my Nike</a>
       </section>
       <section id="benefits" class="benefits">
         <div class="container">
@@ -75,6 +75,7 @@
         </div>
       </section>
       <section id="reviews" class="reviews">
+        <div class="container">
         <ul class="reviews_list">
           <li class="reviews_item">
             <p class="reviews_text">
@@ -112,56 +113,72 @@
             </div>
           </li>
         </ul>
+        </div>
       </section>
-<section id="order" class="order">
-<h2>Order</h2>
-<form class="footer_form">
-  <label class="footer_label">
-    <input
-      class="footer_input"
-      type="email"
-      placeholder="Write your email"
-    />
-  </label>
-  <label class="footer_label">
-    <input
-      class="footer_input"
-      type="text"
-      placeholder="Your Country"
-    />
-  </label>
-  <label class="footer_label">
-    <input
-      class="footer_input"
-      type="text"
-      placeholder="Your City"
-    />
-  </label>
-  <label class="footer_label">
-    <input
-      class="footer_input"
-      type="text"
-      placeholder="Your Address"
-    />
-  </label>
- <a class="order_button" href="https://www.nike.com/">Order my Nike</a>
-</form>
-<footer>
-  <div class="footer_div">
-    <p class="footer_text">Have a question? <a class="footer_link" href="mailto:ColoRawe_support@gmail.com">ColoRawe_support@gmail.com</a></p>
-    <p class="footer_text">Have a proposal for cooperation? <a class="footer_link" href="mailto:ColoRawe_Cooperation@gmail.com">ColoRawe_Cooperation@gmail.com</a></p>
-    <p class="footer_text">Advertising questions? <a class="footer_link" href="mailto:ColoRawe_Advertising@gmail.com">ColoRawe_Advertising@gmail.com</a></p>
-  </div>
-
-  <div class="footer_div">
-    <p class="footer_copy">2022 ColoRawe © All rights reserved</p>
-    <p class="footer_location">United States</p>
-    <img src="./images/logo_3.svg" alt="logo_3"/>
-  </div>
-</footer>
-
-
-</section>
+      <section id="order" class="order">
+      <div class="container">
+        <h2 class="order_title">Order</h2>
+        <form class="footer_form">
+          <label class="footer_label" for="email">
+            <input
+              id="email"
+              class="footer_input"
+              type="email"
+              placeholder="Write your email"
+            />
+        <button class="order-email-button" type="submit">Confirm</button>
+          </label>
+          <label class="footer_label" for="text">
+            <input
+              id="text"
+              class="footer_input"
+              type="text"
+              placeholder="Your Country"
+            />
+          </label>
+          <label class="footer_label" for="text">
+            <input 
+            id="text"
+            class="footer_input"
+            type="text"
+            placeholder="Your City" 
+            />
+          </label>
+          <label class="footer_label" for="text">
+            <input
+              id="text"
+              class="footer_input"
+              type="text"
+              placeholder="Your Address"
+            />
+          </label>
+          <a class="order_button" href="https://www.nike.com/" target="_blank">Order my Nike</a>
+        </form>
+        </div>
+      </section>
+      <footer>
+      <div class="container">
+        <div class="footer_div">
+          <p class="footer_text">
+            Have a question?
+            <a class="footer_link" href="mailto:ColoRawe_support@gmail.com">ColoRawe_support@gmail.com</a>
+          </p>
+          <p class="footer_text">
+            Have a proposal for cooperation?
+            <a class="footer_link" href="mailto:ColoRawe_Cooperation@gmail.com">ColoRawe_Cooperation@gmail.com</a>
+          </p>
+          <p class="footer_text">
+            Advertising questions?
+            <a class="footer_link" href="mailto:ColoRawe_Advertising@gmail.com">ColoRawe_Advertising@gmail.com</a>
+          </p>
+        </div>
+        <div class="footer_div">
+          <p class="footer_copy">2022 ColoRawe © All rights reserved</p>
+          <p class="footer_location">United States</p>
+          <img src="./images/logo_3.svg" alt="logo_3" />
+        </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
