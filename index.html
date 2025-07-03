@@ -23,22 +23,22 @@
   <body>
     <header class="header">
       <div class="container flex">
-        <nav class="nav">
+        <nav class="header_nav">
           <a href="./index.html">
             <img src="./images/logo.svg" alt="logo" />
-            <ul class="header_nav_list">
-              <li><a href="./index.html">Main page</a></li>
-              <li><a href="#benefits">Benefits</a></li>
-              <li><a href="#advantages">Advantages</a></li>
-              <li><a href="#reviews">Reviews</a></li>
-              <li><a href="#footer">Contacts</a></li>
-              <li><a href="#order">Order</a></li>
-            </ul>
-            <ul>
-              <li><a href="./index.html">Ua</a></li>
-              <li><a href="./index.html">Eng</a></li>
-            </ul>
           </a>
+            <ul class="header_nav_list">
+              <li class="header_item current_item"><a href="./index.html">Main page</a></li>
+              <li class="header_item"><a href="#benefits">Benefits</a></li>
+              <li class="header_item"><a href="#advantages">Advantages</a></li>
+              <li class="header_item"><a href="#reviews">Reviews</a></li>
+              <li class="header_item"><a href="#contacts">Contacts</a></li>
+              <li class="header_item"><a href="#order">Order</a></li>
+            </ul>
+            <ul class="list_html">
+              <li class="ua_html"><a href="./index.html">Ua</a></li>
+              <li class="eng_html"><a href="./index.html">Eng</a></li>
+            </ul>
         </nav>
       </div>
     </header>
@@ -49,8 +49,8 @@
           <h1 class="title_hero">ColorRawe</h1>
           <h2 class="hero_subtitle">Your dream Nike</h2>
         <p class="hero_text">
-          On this site you can find custom Nike sneakers of your dreams. The
-          original company caт`t create such beautiful sneakers as we do. Good
+          On this site you can find custom Nike sneakers of your dreams.<br /> The
+          original company caт`t create such beautiful<br /> sneakers as we do.<br /> Good
           luck finding your way in the world of custom sneakers.
         </p>
         <a class="button_hero" href="https://www.nike.com/" target="_blank">Buy my Nike</a>
@@ -60,15 +60,15 @@
         <div class="container">
           <ul class="benefits_list">
             <li class="benefits_item">
-              <p>Premium Quality</p>
+              <p class="benefits_text_1">Premium Quality</p>
               <img src="./images/Stars.svg" alt="Stars" />
             </li>
             <li class="benefits_item">
-              <p>Indelible paint</p>
               <img src="./images/Paints.svg" alt="Paints" />
+              <p class="benefits_text_2">Indelible paint</p>
             </li>
             <li class="benefits_item">
-              <p>Fast shipping</p>
+              <p class="benefits_text_3">Fast shipping</p>
               <img src="./images/Truck.svg" alt="Truck" />
             </li>
           </ul>
@@ -77,19 +77,20 @@
       <section id="reviews" class="reviews">
         <div class="container">
         <ul class="reviews_list">
-          <li class="reviews_item">
+          <h2 class="reviews_title">Reviews</h2>
+          <li class="reviews_item current_1">
             <p class="reviews_text">
               Sneakers are very comfortable and well painted, nothing has worn
               off in a year.
             </p>
             <p class="reviews_date">25.11</p>
-            <div class="reviews_author_wraper">
+            <div class="reviews_author_wrapper">
               <img src="./images/John Teylor.png" alt="John Teylor" />
-              <p class="reviews-author">John Teylor</p>
+              <p class="reviews_author">John Teylor</p>
               <p class="reviews_from">With us from 2018</p>
             </div>
           </li>
-          <li class="reviews_item">
+          <li class="reviews_item current_2">
             <p class="reviews_text">
               I'm very happy with this color scheme. They match all my clothes.
             </p>
@@ -100,13 +101,13 @@
               <p class="reviews_from">With us from 2020</p>
             </div>
           </li>
-          <li class="reviews_item">
+          <li class="reviews_item current_3">
             <p class="reviews_text">
               Just right if you need to go to a party.I use them actively, the
               paint is super.
             </p>
             <p class="reviews_date">18.06</p>
-            <div class="reviews_author_wraper">
+            <div class="reviews_author_wrapper">
               <img src="./images/Tom Maquare.png" alt="Tom Maquare" />
               <p class="reviews-author">Tom Maquare</p>
               <p class="reviews_from">With us from 2019</p>
@@ -122,7 +123,7 @@
           <label class="footer_label" for="email">
             <input
               id="email"
-              class="footer_input"
+              class="footer_input_email"
               type="email"
               placeholder="Write your email"
             />
@@ -156,7 +157,7 @@
         </form>
         </div>
       </section>
-      <footer class="footer">
+      <footer class="footer" id="contacts">
       <div class="container">
         <div class="footer_div">
           <p class="footer_text">
