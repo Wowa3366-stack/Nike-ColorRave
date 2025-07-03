@@ -16,10 +16,6 @@ font-family: var(--font-family);
 color: var(--main-text-color);
 background-color: var(--main-backround-color);
 }
-.header{
-padding-top: 30px;
-padding-bottom: 30px;
-}
 .container{
     width: 1140px;
     padding: 0 15px;
@@ -28,5 +24,29 @@ padding-bottom: 30px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto; */
+    outline: 1px solid red;
   }
-
+.header{
+padding-top: 16px;
+padding-bottom: 16px;
+}
+.hero{
+padding-top: 88px;
+padding-bottom: 183px;
+}
+.benefits{
+padding-top: 105px;
+padding-bottom: 105px;
+}
+.reviews{
+padding-top: 25px;
+padding-bottom: 112px;
+}
+.order{
+padding-top: 21px;
+padding-bottom: 38px;
+}
+.footer{
+padding-top: 45px;
+padding-bottom: 50px;
+}
