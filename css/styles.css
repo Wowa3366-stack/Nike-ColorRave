@@ -30,29 +30,36 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.flex {
-  display: flex;
-}
 .hero {
   padding-top: 88px;
   padding-bottom: 183px;
   background-image: url("../images/nike.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .benefits {
   padding-top: 105px;
   padding-bottom: 105px;
   background-image: url("../images/Benefits_Backround.jpg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 .reviews {
   padding-top: 25px;
   padding-bottom: 114px;
+  background-image: url("../images/Flowers.svg"), url("../images/Reviews_Backround.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom,center;
+  background-size: 240px 380px,cover;
 }
 .order {
   padding-top: 21px;
   padding-bottom: 38px;
   background-image: url("../images/Order_backround.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .footer {
   padding-top: 45px;
@@ -120,7 +127,6 @@ body {
   color: #fff;
   border-radius: 10px;
   margin-top: 41px;
-  margin-bottom: 183px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 61px;
@@ -134,6 +140,8 @@ body {
 .benefits_list {
   display: flex;
   gap: 145px;
+  border: 5px solid #8e32c6;
+  padding: 25px 50px;
 }
 .benefits_item {
   font-family: var(--second-family);
@@ -141,6 +149,12 @@ body {
   font-size: 36px;
   text-align: center;
   color: #fff;
+}
+.benefits_item:nth-child(2) {
+  border-right: 1px solid var(--main-text-color);
+  border-left: 1px solid var(--main-text-color);
+  padding: 0px 94px;
+  gap: 95px;
 }
 .benefits_text_1 {
   padding-bottom: 4px;
@@ -151,13 +165,6 @@ body {
 .benefits_text_3 {
   padding-bottom: 6px;
 }
-.reviews {
-  background: linear-gradient(135deg, #0f1c2e, #001221);
-  padding: 80px 20px;
-  font-family: var(--font-family);
-  color: white;
-}
-
 .reviews_title {
   font-family: var(--second-family);
   font-weight: 400;
@@ -273,9 +280,9 @@ body {
   color: #959595;
   padding: 14px 20px;
   border-radius: 50px;
-  width: 690px;
   height: 60px;
-  margin: 0 auto;
+  border: none;
+  outline: none;
 }
 .footer_input {
   font-family: var(--font-family);
@@ -286,6 +293,16 @@ body {
   border-radius: 50px;
   width: 580px;
   height: 50px;
+  border: none;
+  outline: none;
+}
+.flex_label {
+  display: flex;
+  color: #959595;
+  background-color: var(--main-text-color);
+  border-radius: 50px;
+  width: 690px;
+justify-content: space-between;
 }
 .order-email-button {
   font-family: var(--font-family);
@@ -294,6 +311,8 @@ body {
   font-size: 28px;
   color: #8d8d8d;
   padding: 15px;
+  width: 250px;
+height: 50px;
 }
 .order_button {
   padding-top: 20px;
@@ -312,21 +331,15 @@ body {
   background-color: #63208d;
   color: #c7c7c7;
 }
-/* .footer::before{
-content:"";
-display: block;
-width: 1110px;
-height: 0px;
-background-color: #9b9b9b;
-margin-top: 20px;
-margin-bottom: 24px;
-}  */
 .footer_text {
   font-family: var(--font-family);
   font-weight: 400;
+  display: flex;
   font-size: 24px;
   color: #fff;
   margin-bottom: 10px;
+  justify-content: space-between;
+  gap: 10px;
 }
 .footer_link {
   font-family: var(--font-family);
@@ -339,11 +352,14 @@ margin-bottom: 24px;
 .footer_div {
   display: flex;
   flex-direction: column;
+  margin-bottom: 24px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
 }
 .footer_div img {
+  display: flex;
   width: 204px;
   height: 148px;
-  display: block;
   margin-top: 15px;
 }
 .footer_copy {
