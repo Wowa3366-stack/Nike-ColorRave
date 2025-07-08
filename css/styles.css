@@ -48,10 +48,11 @@ body {
 .reviews {
   padding-top: 25px;
   padding-bottom: 114px;
-  background-image: url("../images/Flowers.svg"), url("../images/Reviews_Backround.jpg");
+  background-image: url("../images/Flowers.svg"),
+    url("../images/Reviews_Backround.jpg");
   background-repeat: no-repeat;
-  background-position: left bottom,center;
-  background-size: 240px 380px,cover;
+  background-position: left bottom, center;
+  background-size: 240px 380px, cover;
 }
 .order {
   padding-top: 21px;
@@ -171,6 +172,7 @@ body {
   font-size: 48px;
   text-align: center;
   color: #fff;
+  margin-bottom: 24px;
 }
 
 .reviews_list {
@@ -237,6 +239,11 @@ body {
   align-items: center;
   padding-top: 50px;
 }
+.reviews_author_wrapper img {
+  margin-right: 5px;
+}
+.div_reviews_block {
+}
 .reviews_date {
   font-family: var(--font-family);
   font-weight: 400;
@@ -302,7 +309,7 @@ body {
   background-color: var(--main-text-color);
   border-radius: 50px;
   width: 690px;
-justify-content: space-between;
+  justify-content: space-between;
 }
 .order-email-button {
   font-family: var(--font-family);
@@ -312,7 +319,7 @@ justify-content: space-between;
   color: #8d8d8d;
   padding: 15px;
   width: 250px;
-height: 50px;
+  height: 50px;
 }
 .order_button {
   padding-top: 20px;
