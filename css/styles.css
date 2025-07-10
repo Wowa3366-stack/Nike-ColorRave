@@ -24,7 +24,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto; */
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .header {
   padding-top: 16px;
@@ -44,12 +44,12 @@ body {
   background-image: url("../images/Benefits_Backround.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .reviews {
   padding-top: 25px;
   padding-bottom: 114px;
-  background-image: url("../images/Flowers.svg"),
-    url("../images/Reviews_Backround.jpg");
+  background-image: url("../images/Flowers.svg"),url("../images/Reviews_Backround.jpg");
   background-repeat: no-repeat;
   background-position: left bottom, center;
   background-size: 240px 380px, cover;
@@ -81,8 +81,8 @@ body {
   font-size: 24px;
   color: #c7c7c7;
 }
-.header_item:hover{
-color: var(--main-text-color);
+.header_item:hover {
+  color: var(--main-text-color);
 }
 .current_item {
   color: #fff;
@@ -98,14 +98,25 @@ color: var(--main-text-color);
   font-size: 24px;
   color: #dcdcdc;
 }
-.ua_html:hover{
-color: var(--main-text-color);
+.current_ua {
+  color: #fff;
+  font-weight: 400;
+}
+.ua_html:hover {
+  color: var(--main-text-color);
 }
 .eng_html {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 24px;
   color: #fff;
+}
+.eng_html:hover {
+  color: var(--main-text-color);
+}
+.current_eng {
+  font-weight: 300;
+  color: #dcdcdc;
 }
 .title_hero {
   font-family: var(--second-family);
@@ -189,7 +200,6 @@ color: var(--main-text-color);
 
 .reviews_item {
   width: 255px;
-  height: 292px;
   padding-top: 50px;
   padding-bottom: 30px;
   padding-left: 15px;
@@ -201,7 +211,7 @@ color: var(--main-text-color);
 }
 
 .current_1 {
-box-shadow: 0 30px 0 -13px #533978, 0 14px 0 -5px #7b54b2;
+  box-shadow: 0 14px 0 -5px #7b54b2, 0 30px 0 -13px #533978;
   background: linear-gradient(
     135deg,
     #00e5e6 7.29%,
@@ -212,7 +222,7 @@ box-shadow: 0 30px 0 -13px #533978, 0 14px 0 -5px #7b54b2;
 }
 
 .current_2 {
-box-shadow: 0 30px 0 -13px #61337c, 0 14px 0 -5px #9159b1;
+  box-shadow: 0 14px 0 -5px #9159b1, 0 30px 0 -13px #61337c;
   background: linear-gradient(
     135deg,
     #ff68b4 0%,
@@ -223,7 +233,7 @@ box-shadow: 0 30px 0 -13px #61337c, 0 14px 0 -5px #9159b1;
 }
 
 .current_3 {
-box-shadow: 0 30px 0 -13px #732f26, 0 14px 0 -5px #b95a4c;
+  box-shadow: 0 14px 0 -5px #b95a4c, 0 30px 0 -13px #732f26;
   background: linear-gradient(
     135deg,
     #ffe128 0%,
@@ -243,19 +253,17 @@ box-shadow: 0 30px 0 -13px #732f26, 0 14px 0 -5px #b95a4c;
 .reviews_author_wrapper {
   display: flex;
   align-items: center;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 .reviews_author_wrapper img {
   margin-right: 5px;
-}
-.div_reviews_block {
 }
 .reviews_date {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   color: #d8d8d8;
-  padding-top: 8px;
+  margin-top: 8px;
 }
 .reviews_author {
   font-family: var(--font-family);
@@ -276,7 +284,6 @@ box-shadow: 0 30px 0 -13px #732f26, 0 14px 0 -5px #b95a4c;
   color: #fff;
   text-align: center;
   margin-bottom: 40px;
-  padding: 6px 20px;
 }
 
 .footer_form {
@@ -323,9 +330,10 @@ box-shadow: 0 30px 0 -13px #732f26, 0 14px 0 -5px #b95a4c;
   font-weight: 400;
   font-size: 28px;
   color: #8d8d8d;
-  padding: 15px;
   width: 250px;
-  height: 50px;
+}
+.order-email-button:hover {
+  background-color: var(--main-nav-color);
 }
 .order_button {
   padding-top: 20px;
@@ -369,11 +377,13 @@ box-shadow: 0 30px 0 -13px #732f26, 0 14px 0 -5px #b95a4c;
   border-bottom: 1px solid grey;
   padding-bottom: 20px;
 }
-.footer_div img {
+.footer_div_bottom {
   display: flex;
-  width: 204px;
-  height: 148px;
-  margin-top: 15px;
+  justify-content: space-between;
+}
+.footer_div_bottom img {
+  margin-top: -24px;
+  margin-right: -100px;
 }
 .footer_copy {
   font-family: var(--font-family);
