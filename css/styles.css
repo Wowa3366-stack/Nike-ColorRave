@@ -81,6 +81,9 @@ body {
   font-size: 24px;
   color: #c7c7c7;
 }
+.header_item:hover{
+color: var(--main-text-color);
+}
 .current_item {
   color: #fff;
 }
@@ -94,6 +97,9 @@ body {
   font-weight: 300;
   font-size: 24px;
   color: #dcdcdc;
+}
+.ua_html:hover{
+color: var(--main-text-color);
 }
 .eng_html {
   font-family: var(--font-family);
