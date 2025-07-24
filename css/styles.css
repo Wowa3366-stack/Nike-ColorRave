@@ -370,6 +370,9 @@ body {
   text-decoration-skip-ink: none;
   color: #fff;
 }
+.footer_link:hover{
+color: #63208d;
+}
 .footer_div {
   display: flex;
   flex-direction: column;
